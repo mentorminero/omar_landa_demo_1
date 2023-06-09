@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Landa</title>
+    <style>
+        body {margin:0;}
+        canvas { width: 100%; height:100%;};
+    </style>
+    <style>
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: blue;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        }
+      </style>
+
+
+</head>
+<body>
+    <div id="canvas-container" style="position: relative;">
+        <script src="https://cdn.jsdelivr.net/npm/three@0.101.1/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.101.1/examples/js/controls/OrbitControls.js"></script>
+        <script src="https://cdn.coursesaver.com/three.js-74/examples/js/loaders/STLLoader.js"></script>
+        <script src="cargar_stl.js"></script>
+        <script>
+        var rutaArchivoSTL = '/static/topo.stl';
+        cargarSTL(rutaArchivoSTL);
+    </script>
+        <a href="../index.html" class="button" style="position: absolute; top: 20px; left: 20px;">Regresar</a>
+        
+      </div>
+      <div id="text-container" style="position: absolute; top: 80px; left: 20px;color: blue;">
+        <h1>Topografía Original</h1>
+        
+        
+      </div>
+    
+</body>
+</html>
